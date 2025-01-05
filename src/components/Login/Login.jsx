@@ -15,7 +15,7 @@ function Login() {
     return (
         <div className="login-container">
             <h1 className="heading">SafireChat</h1>
-            <p className="subheading">Please sign up to your account</p>
+            <p className="subheading">Please Sign Up To Your Account</p>
 
             <form className="login-form" onSubmit={handleSubmit}>
                 <div className="input-wrapper">
@@ -41,8 +41,13 @@ function Login() {
                 </div>
 
                 <button type="submit" className="btn">
-                    Sign In
+                    Create Account
                 </button>
+
+                <div className="account-info">
+                    <span className="text-gray">Already Have Account? </span>
+                    <span className="text-red">Login</span>
+                </div>
             </form>
         </div>
     );
