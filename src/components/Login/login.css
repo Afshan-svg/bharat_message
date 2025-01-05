@@ -1,0 +1,116 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .login-container {
+    background-color: #202020;
+    color: #f7f7f7;
+}
+
+body.light-mode .heading {
+    color: #202020;
+}
+
+body.dark-mode .input-wrapper {
+    background-color: #303030;
+    color: #f7f7f7;
+}
+
+body.dark-mode .input::placeholder {
+    color: #8b8c8b;
+}
+
+body.dark-mode .btn {
+    background-color: #d51e1a;
+    color: #f7f7f7;
+}
+
+body.light-mode .login-container {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .input-wrapper {
+    background-color: #f7f7f7;
+    color: #000000;
+}
+
+body.light-mode .input::placeholder {
+    color: #8b8c8b;
+}
+
+body.light-mode .btn {
+    background-color: #d51e1a;
+    color: #ffffff;
+}
+
+.heading {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #8b8c8b;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    background-color: #f7f7f7;
+    border: 2px solid #d51e1a;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.input-wrapper:hover {
+    background-color: #ffffff;
+    border-color: #b01714;
+}
+
+
+.input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #202020;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #8b8c8b;
+}
+
+.input-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #d51e1a;
+    transition: color 0.3s;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #d51e1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b01714;
+    opacity: 0.9;
+}
